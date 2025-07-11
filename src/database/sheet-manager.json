@@ -1,51 +1,21 @@
 [
   {
-    "id": 1,
-    "week": "2025-07-08",
-    "gerente": "TIGRE",
-    "valor": 1308.69,
-    "vale": 0,
-    "despesa": 100.0,
-    "total": 1208.69,
-    "tipo": "belem"
-  },
-  {
-    "id": 2,
-    "week": "2025-07-08",
-    "gerente": "SANDERSON",
-    "valor": 1688.16,
-    "vale": 0,
-    "despesa": 100.0,
-    "total": 1588.16,
-    "tipo": "belem"
-  },
-  {
-    "id": 3,
-    "week": "2025-07-08",
-    "gerente": "RAFAEL",
-    "valor": 1791.72,
-    "vale": 0,
-    "despesa": 0,
-    "total": 1791.72,
-    "tipo": "belem"
-  },
-  {
-    "id": 4,
-    "week": "2025-07-08",
-    "gerente": "WELINGTHON",
-    "valor": 1248.02,
-    "vale": 0,
-    "despesa": 100.0,
-    "total": 1148.02,
-    "tipo": "belem"
-  },
-  {
     "id": 5,
     "week": "2025-07-08",
     "gerente": "BINHO",
     "valor": -2673.63,
     "vale": 0,
-    "despesa": 100.0,
+    "despesa": 100,
+    "total": -2773.63,
+    "tipo": "belem"
+  },
+  {
+    "id": 1,
+    "week": "2025-07-08",
+    "gerente": "BINHO",
+    "valor": -2673.63,
+    "vale": 0,
+    "despesa": 100,
     "total": -2773.63,
     "tipo": "belem"
   }

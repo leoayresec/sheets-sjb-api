@@ -1,7 +1,8 @@
-import * as SheetManagerBelemRepository from "../repositories/sheet-manager-repository";
+import { SheetManager } from "../models/sheet-manager-model";
+import * as SheetManagerRepository from "../repositories/sheet-manager-repository";
 import * as HttpResponse from "../utils/http-response";
 export const getSheetsManagerService = async () =>{
-    const data = await SheetManagerBelemRepository.findAllSheetsManager();
+    const data = await SheetManagerRepository.findAllSheetsManager();
     let response = null;
      if (data){
         response = await HttpResponse.ok(data);
@@ -11,4 +12,11 @@ export const getSheetsManagerService = async () =>{
      }
     return response;
     
+}
+
+export const insertSheetManagerService = async (sheetManager: SheetManager) =>{
+   let response = null;
+   await SheetManagerRepository.insertSheetManager(sheetManager);
+   response = await HttpResponse.ok({message: "Registro criado com sucesso"}); 
+   return response;
 }

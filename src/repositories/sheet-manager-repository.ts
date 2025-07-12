@@ -2,8 +2,13 @@ import { selectAllSheetsManager, writeSheetsManagerDatabase } from "../database/
 import { SheetManager as SheetManager } from "../models/sheet-manager-model";
 
 export const findAllSheetsManager = async () => {
-    const sheetManagerBelem: SheetManager[] = await selectAllSheetsManager();
-    return sheetManagerBelem;
+    const sheetManager: SheetManager[] = await selectAllSheetsManager();
+    return sheetManager;
+}
+
+export const findSheetManagerById = async (id: number):Promise<SheetManager | undefined> => {
+    const sheetManager: SheetManager[] = await selectAllSheetsManager();
+    return sheetManager.find((manager) => manager.id===id);
 }
 
 export const insertSheetManager = async(sheetManager: SheetManager) =>{

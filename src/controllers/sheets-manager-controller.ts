@@ -11,6 +11,11 @@ export const getSheetManagerByid = async (req: Request, res: Response) => {
     res.status(response.statusCode).json(response.body);
 }
 
+export const getSheetManagerByWeek = async (req: Request, res: Response) => {
+    const response = await SheetsManagerService.getSheetManagerByWeekService(req.params.week);
+    res.status(response.statusCode).json(response.body);
+}
+
 export const postSheetsManager = async (req: Request, res: Response) => {
     const response = await SheetsManagerService.insertSheetManagerService(req.body);
     res.status(response.statusCode).json(response.body);

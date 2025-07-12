@@ -18,5 +18,25 @@
     "despesa": 100,
     "total": -2773.63,
     "tipo": "belem"
+  },
+  {
+    "id": 1,
+    "week": "2025-07-09",
+    "gerente": "Leo",
+    "valor": -2673.63,
+    "vale": 0,
+    "despesa": 100,
+    "total": -2773.63,
+    "tipo": "belem"
+  },
+  {
+    "id": 1,
+    "week": "2025-07-09",
+    "gerente": "Teste",
+    "valor": -2673.63,
+    "vale": 0,
+    "despesa": 100,
+    "total": -2773.63,
+    "tipo": "belem"
   }
 ]

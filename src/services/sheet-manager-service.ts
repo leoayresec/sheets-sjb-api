@@ -27,6 +27,20 @@ export const getSheetManagerByIdService = async (id: number) =>{
     
 }
 
+export const getSheetManagerByWeekService = async (week: string) =>{
+    console.log('Service:',week);
+    const data = await SheetManagerRepository.findSheetManagerByWeek(week);
+    let response = null;
+     if (data){
+        response = await HttpResponse.ok(data);
+     }
+     else {
+        response = await HttpResponse.noContent();
+     }
+    return response;
+    
+}
+
 export const insertSheetManagerService = async (sheetManager: SheetManager) =>{
    let response = null;
    await SheetManagerRepository.insertSheetManager(sheetManager);

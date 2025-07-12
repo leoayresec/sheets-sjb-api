@@ -11,6 +11,11 @@ export const findSheetManagerById = async (id: number):Promise<SheetManager | un
     return sheetManager.find((manager) => manager.id===id);
 }
 
+export const findSheetManagerByWeek = async (week: string):Promise<SheetManager[] | undefined> => {
+    const sheetManager: SheetManager[] = await selectAllSheetsManager();
+    return sheetManager.filter((manager) => manager.week===week);
+}
+
 export const insertSheetManager = async(sheetManager: SheetManager) =>{
     const sheetsManager: SheetManager[] = await findAllSheetsManager();
     sheetsManager.push(sheetManager)

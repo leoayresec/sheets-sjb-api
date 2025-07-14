@@ -1,6 +1,6 @@
 export interface SheetManager {
   id: number;
-  week: string;         
+  semana: string;         
   gerente: string;
   valor: number;
   despesa: number;
